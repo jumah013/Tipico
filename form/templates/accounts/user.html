@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--new-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <style>
+
+ *{
+    margin: 0;
+    padding: 0;
+  }
+p{
+    color: #fff;
+}
+h2,h3{
+    color: #fff;
+    font-size: 18px;
+}
+
+      /*start navbar*/
+.hello-msg{
+      font-size: 18px;
+      color: #fff;
+      margin-right: 20px;}
+
+.bg-dark{
+    background-color: #04204e !important;
+    }
+
+.navbar-brand{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+
+.bg-dark{
+    background-color: #04204e !important;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+/*end navbar*/
+
+/*package subscriptions*/
+
+.big-text{
+    font-size: 40px;
+    margin: 20px 0;
+    color: darkorange;
+}
+
+.h1{
+    
+    font-size: 52px;
+    font-weight: 700px;
+}
+a.btn{
+    margin: 30px 10px;
+    width:150px ;
+    padding: 10px;
+    border-radius: 20px;
+}
+a.btn-first{
+    background-color: darkorange;
+    color: #fff;
+
+}
+a.btn-second{
+    background: transparent;
+    border: 1px solid darkorange;
+    color: #fff;
+}
+a.btn-third{
+    background: transparent;
+    border: 1px solid darkorange;
+    color: #fff;
+}
+a.btn:hover{
+    background: darkorange;
+    border: none;
+    color:#fff ;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+.banner-info, .banner-image{
+
+    margin: 30px auto;
+}
+
+.vaid{
+    background: teal
+}
+
+/**/
+.footer-top{
+    background: #111;
+    padding: 80px 0;
+}
+.segment-one h3{
+    font-family: courgette;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.segment-one h3{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size:25px;
+}
+.segment-one h3:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-two h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size:25px;
+}
+.segment-two h2::before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.segment-two ul li a{
+    color: #999;
+    text-decoration: none;
+}
+.segment-two ul a:hover{
+    color: #13A456;
+}
+.segment-three h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size:25px;
+}
+.segment-three h2::before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-three a{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+.segment-three a i{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+.segment-four h4{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size:25px;
+}
+.segment-four h4:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-five h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size:25px;
+}
+.segment-five h2:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-five ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-five ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.segment-five ul li a{
+    color: #999;
+    text-decoration: none;
+}
+/* Booking ticket*/
+.section-heading h2{
+    font-size: 45px;
+    color:red;
+    text-transform: uppercase;
+}
+button.btn{
+    margin: 30px 10px;
+    width:150px ;
+    padding: 10px;
+    border-radius: 20px;
+}
+button.btn-nine{
+    background-color: blue;
+    color: #fff;
+
+}
+button.btn:hover{
+    background: darkorange;
+    border: none;
+    color:#fff ;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+.form-group label{
+    color:teal;
+    content: '|';
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+}
+/* end of booking*/
+#footer .footer-top .segment-five ul a:hover{
+    color: #13A456;
+}
+.link-area li a i{
+    margin-right: 10px;
+    
+}
+.link-area li{
+    padding: 5px 5px 5px 0;
+    list-style: none;
+
+} 
+
+#footer{
+    background-color: #23415c;
+    width: 100%;
+    color: #fff;
+}
+#footer .footer-top .footer-info h3{
+    color: cornsilk;
+    font-size: 150%;
+    font-weight: 700 ;
+}
+#footer .tee{
+    text-align: center;
+    color: white;
+}
+
+
+
+  </style>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container">
+      <a class="navbar-brand" href="#">Tipico</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--col-auto begins-->
+      <div class="col-auto">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav navbar-right">
+          <a class="nav-item nav-link active" href="{% url 'user'%}">HOME</a>
+          <a class="nav-item nav-link" href="{% url 'index'%}">CONTACT</a>
+          <a class="nav-item nav-link" href="{% url 'index'%}">ABOUT US</a> 
+          
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MODE OF PAYMENT
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Paypal</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Skrill</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Neteller</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Bitcoins</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">M-PESA</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Western Union</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Perfect Money</a>
+            
+          </div>
+          <a class="nav-item nav-link" href="{% url 'accounts_settings'%}">profile</a> 
+        </div> 
+      </div>
+    </div>
+    <!-- col auto ends -->
+    <span class="hello-msg">Hello,{{request.user}}</span>
+    <span class="hello-msg"><a href="{% url 'logout'%}">Logout</a></span>
+    </div>
+    </nav>
+<!-- end of navigation bar -->
+
+      <section class="vaid" > 
+      <div class="container" id="intro">
+        <div class="row">
+          
+          <div class="col-sm-6 banner-info" >
+            <h1>TIPICO</h1>
+            <P class="big-text"> WE HAVE THE BEST PACKAGE SUBSCRIPTION</p>
+            <p>We offer you the best package subsciption ever for VIP,check out new package VIP available</p>
+            <p>If you have paid for VIP below is the link for you,if you experience any challenge kindly contact us via our <strong>Contact Page</strong></p>
+            <p>For those who dont have VIP access enjoy our free Odds,Thank us later!</p>
+            <a class="btn btn-first" href="{% url 'freeodds'%}">Free Odds</a>
+            <a class="btn btn-second" href="{% url 'vip'%}">VIP</a>
+            <a class="btn btn-third" href="{% url 'packages'%}">Our Packages</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="background-image: url('https://media.gettyimages.com/photos/golo-kante-of-chelsea-celebrates-with-teammates-after-scoring-his-picture-id1015023676?s=2048x2048');">
+        <div class="container">
+            <div class="row">
+              <!--section heading-->
+              <div class="col-12">
+                <div class="section-heading text-center white">
+                  <h2>Book Ticket</h2>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <!--booking form-->
+                <div class="appointment-form">
+                  <form action="{% url 'success'%}" method="POST">
+                    {% csrf_token%}
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group mb-30">
+                          <label>Name:</label>
+                          <input type="text" name="your_name" class="form-control" 
+                          placeholder="Your name" required>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-30">
+                          <label>Phone:</label>
+                          <input type="text" name="your_phone" class="form-control" 
+                          placeholder="Your Phone" required>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-30">
+                          <label>Email</label>
+                          <input type="email" name="your_email" class="form-control" 
+                          placeholder="Your Email" required>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-30">
+                          <label>Address:</label>
+                          <input type="text" name="your_address" class="form-control" 
+                          placeholder="Your Address" required>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-30">
+                          <label>Total Odds:</label>
+                          <select name="your_schedule" class="form-control">
+                            <option value="Choose your Schedule">Choose Your Schedule</option> 
+                            <option value="9 am to 10am">9am to 10am</option>
+                            <option value="9 am to 10am">9am to 10am</option>
+                            <option value="9 am to 10am">9am to 10am</option>
+                            <option value="9 am to 10am">9am to 10am</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-30">
+                          <label>Booking Date:</label>
+                          <input type="date" name="your_date" class="form-control" 
+                          placeholder="Your Booking Date" required>
+                          </select>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-6">
+                        <div class="form-group mb-30">
+                          <label>Message:</label>
+                        <textarea name="your_message" class="form-control"
+                         placeholder="Your Message"></textarea>
+                        </div>
+                      </div>
+      
+                      <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-nine">Book Now</button>
+                    </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer id="footer"> 
+      <div class="footer-top">]
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-xs12 segment-one">
+              <h3>Tipico</h3>
+              <p>We are the best,winning is a choice not an option.Tipico is the best place to be
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs12 segment-two">
+              <h2>Links</h2>
+              <ul>
+                <li><i class="ion-ios-arrow-right"></i><a href="#">Home</a></li>
+                <li><i class="ion-ios-arrow-right"></i><a href="#">About us</a></li>
+                <li><i class="ion-ios-arrow-right"></i><a href="#">Contact</a></li>
+                <li><i class="ion-ios-arrow-right"></i><a href="#">Vip</a></li>
+                <li><i class="ion-ios-arrow-right"></i><a href="#">odds</a></li>
+              </ul>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs12 segment-three">
+              <h2>Follow</h2>
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="telegram"><i class="fa fa-telegram"></i></a>
+              <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs12 segment-five">
+              <h2>contact</h2>
+              <ul class="link-area">
+                <li><a href="#"><i class="fa fa-phone"> 0701161464</i></a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"> tipico@gmail.com</i></a></li>
+                <li><a href="#"><i class="fa fa-map"> 123, West Kericho</i></a></li>
+                <li><a href="#"><i class="fa fa-globe"> wwww.tipico.com</i></a></li>
+              </ul>
+           
+            </div>
+           
+
+                                                                
+          </div>
+        </div>
+      </div>
+<p class="tee">Copyright &copy;Tipico2020</p>
+    </footer>
+
+</body>
+</html>

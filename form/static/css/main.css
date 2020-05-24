@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    color: #fff;
+}
+h2,h3{
+    color: #fff;
+    font-size: 18px;
+}
+
+/*nabar*/
+.bg-dark{
+    background-color: #04204e !important;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+/*endnavbar*/
+
+/*start slider*/
+.carousel-item{
+    height: 80vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size:cover;
+    -webkit-background-size: cover;
+
+}
+.carousel-caption {
+    bottom: 270px;
+}
+.carousel-caption h5,h1{
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-bottom:25px ;
+    text-transform: uppercase;
+    color: teal;
+    font-weight: bolder;
+}
+.carousel-caption p{
+    color:white;
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+    font-weight: bold;
+}
+
+.big-text{
+    font-size: 40px;
+    margin: 20px 0;
+    color: white;
+}
+.h1{
+    
+    font-size: 52px;
+    font-weight: 700px;
+}
+a.btn{
+    margin: 30px 10px;
+    width:150px ;
+    padding: 10px;
+    border-radius: 20px;
+}
+a.btn-first{
+    background-color: darkorange;
+    color: #fff;
+
+}
+a.btn-second{
+    background: transparent;
+    border: 1px solid darkorange;
+    color: #fff;
+}
+a.btn:hover{
+    background: darkorange;
+    border: none;
+    color:#fff ;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+a.btn-six{
+    background-color: darkorange;
+    color: #fff;
+
+}
+/*end slider*/
+
+/* Booking tickt*/
+button.btn{
+    margin: 30px 10px;
+    width:150px ;
+    padding: 10px;
+    border-radius: 20px;
+}
+button.btn-nine{
+    background-color: blue;
+    color: #fff;
+
+}
+button.btn:hover{
+    background: darkorange;
+    border: none;
+    color:#fff ;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+.form-group label{
+    color:teal;
+    content: '|';
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+
+.section-heading h2{
+    font-size: 45px;
+    color:red;
+    text-transform: uppercase;
+}
+/*End of bookin*/
+
+/*start footer*/
+
+.footer-top{
+    background: #111;
+    padding: 80px 0;
+}
+.segment-one h3{
+    font-family: courgette;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.segment-one h3{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-one h3:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-two h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-two h2::before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.segment-two ul li a{
+    color: #999;
+    text-decoration: none;
+}
+.segment-two ul a:hover{
+    color: #13A456;
+}
+.segment-three h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-three h2::before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-three a{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+.segment-three a i{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+.segment-four h4{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-four h4:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-five h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-five h2:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-five ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-five ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.segment-five ul li a{
+    color: #999;
+    text-decoration: none;
+}
+
+#footer .footer-top .segment-five ul a:hover{
+    color: #13A456;
+}
+.link-area li a i{
+    margin-right: 10px;
+    
+}
+.link-area li{
+    padding: 5px 5px 5px 0;
+    list-style: none;
+
+} 
+
+#footer{
+    background-color: #23415c;
+    width: 100%;
+    color: #fff;
+}
+#footer .footer-top .footer-info h3{
+    color: cornsilk;
+    font-size: 150%;
+    font-weight: 700 ;
+}
+#footer .tee{
+    text-align: center;
+    color: white;
+}
+/*end footer*/
+

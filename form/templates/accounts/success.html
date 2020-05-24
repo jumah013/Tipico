@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+.hello-msg{
+      font-size: 18px;
+      color: #fff;
+      margin-right: 20px;}
+
+      .bg-dark{
+    background-color: #04204e !important;
+
+
+    }
+    .navbar-brand{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+ /* css styling */
+ *{
+    margin: 0;
+    padding: 0;
+}
+.bg-dark{
+    background-color: #04204e !important;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+.price-table{
+    text-align: center;
+    background: teal;
+}
+.footer-top{
+    background: #111;
+    padding: 80px 0;
+}
+.segment-one h3{
+    font-family: courgette;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.segment-one h3{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-one h3:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-two h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-two h2::before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.segment-two ul li a{
+    color: #999;
+    text-decoration: none;
+}
+.segment-two ul a:hover{
+    color: #13A456;
+}
+.segment-three h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-three h2::before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-three a{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+.segment-three a i{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+.segment-four h4{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-four h4:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-five h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-five h2:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-five ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-five ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.segment-five ul li a{
+    color: #999;
+    text-decoration: none;
+}
+
+#footer .footer-top .segment-five ul a:hover{
+    color: #13A456;
+}
+.link-area li a i{
+    margin-right: 10px;
+    
+}
+.link-area li{
+    padding: 5px 5px 5px 0;
+    list-style: none;
+
+} 
+
+#footer{
+    background-color: #23415c;
+    width: 100%;
+    color: #fff;
+}
+#footer .footer-top .footer-info h3{
+    color: cornsilk;
+    font-size: 150%;
+    font-weight: 700 ;
+}
+#footer .tee{
+    text-align: center;
+    color: white;
+}
+.juma{
+    background: teal;
+}
+button.btn{
+    margin: 30px 10px;
+    width:150px ;
+    padding: 10px;
+    border-radius: 20px;}
+
+button.btn-four{
+    background: transparent;
+    border: 1px solid darkorange;
+    color: #fff;
+    }
+button.btn:hover{
+    background: darkorange;
+    border: none;
+    color:#fff ;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+    }
+.juma{
+    color: white;
+    font-size: 20px;
+    left: 1.9;
+
+}
+
+
+    </style>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container">
+          <a class="navbar-brand" href="#">Tipico</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--col-auto begins-->
+          <div class="col-auto">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav navbar-right">
+              <a class="nav-item nav-link active" href="{% url 'index'%}">HOME</a>
+              <a class="nav-item nav-link" href="{% url 'index'%}">CONTACT</a>
+              <a class="nav-item nav-link" href="{% url 'index'%}">ABOUT US</a> 
+              
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                MODE OF PAYMENT
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Paypal</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Skrill</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Neteller</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Bitcoins</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">M-PESA</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Western Union</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Perfect Money</a>
+                
+              </div>
+              <a class="nav-item nav-link" href="{% url 'accounts_settings'%}">profile</a> 
+            </div> 
+          </div>
+        </div>
+        <!-- col auto ends -->
+        <span class="hello-msg">Hello,{{request.user}}</span>
+        <span class="hello-msg"><a href="{% url 'logout'%}">Logout</a></span>
+        </div>
+        </nav>
+       
+      <section class="juma mt-50 mb-100">
+    <center>
+        <h1><strong> Hello,{{your_name}} below is your booking details</strong></h1>
+        
+        <strong>Name:</strong>{{your_name}}<br/>
+        <strong>Phone:</strong>{{your_phone}}<br/>
+        <strong>Email:</strong>{{your_email}}<br/>
+        <strong>Address:</strong>{{your_address}}<br/>
+        <strong>Schedule:</strong>{{your_schedule}}<br/>
+        <strong>Date:</strong>{{your_date}}<br/>
+        <strong>Message:</strong>{{your_message}}<br/>  
+
+    <br/><br/><br/>
+
+        <p><strong>Dear,{{your_name}} booking ticket has been received,we will contact 
+            your shortly via Phone number or your email</strong></p>
+    </center>
+
+    <br/><br/><br/><br/>
+      </section>
+
+           <footer id="footer"> 
+            <div class="footer-top">]
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-xs12 segment-one">
+                    <h3>Tipico</h3>
+                    <p>We are the best,winning is a choice not an option.Tipico is the best place to be
+                    </p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-xs12 segment-two">
+                    <h2>Links</h2>
+                    <ul>
+                      <li><i class="ion-ios-arrow-right"></i><a href="#">Home</a></li>
+                      <li><i class="ion-ios-arrow-right"></i><a href="#">About us</a></li>
+                      <li><i class="ion-ios-arrow-right"></i><a href="#">Contact</a></li>
+                      <li><i class="ion-ios-arrow-right"></i><a href="#">Vip</a></li>
+                      <li><i class="ion-ios-arrow-right"></i><a href="#">odds</a></li>
+                    </ul>
+      
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-xs12 segment-three">
+                    <h2>Follow</h2>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="telegram"><i class="fa fa-telegram"></i></a>
+                    <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+      
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-xs12 segment-five">
+                    <h2>contact</h2>
+                    <ul class="link-area">
+                      <li><a href="#"><i class="fa fa-phone"> 0701161464</i></a></li>
+                      <li><a href="#"><i class="fa fa-envelope-o"> tipico@gmail.com</i></a></li>
+                      <li><a href="#"><i class="fa fa-map"> 123, West Kericho</i></a></li>
+                      <li><a href="#"><i class="fa fa-globe"> wwww.tipico.com</i></a></li>
+                    </ul>
+                 
+                  </div>
+                 
+      
+                                                                      
+                </div>
+              </div>
+            </div>
+      <p class="tee">Copyright &copy;Tipico2020</p>
+          </footer>
+    
+    
+</body>
+</html>
+
+
+

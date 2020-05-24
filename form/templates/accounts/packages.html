@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--new-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <style>
+    .hello-msg{
+      font-size: 18px;
+      color: #fff;
+      margin-right: 20px;}
+
+      .bg-dark{
+    background-color: #04204e !important;
+
+
+    }
+    .navbar-brand{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+ /* css styling */
+ *{
+    margin: 0;
+    padding: 0;
+}
+.bg-dark{
+    background-color: #04204e !important;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 28px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+
+
+h1{
+  font-size: 32px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+}
+h1::after{
+  content: '';
+  background: black;
+  display: block;
+  height: 3px;
+  width:200px ;
+  margin: 15px auto;
+}
+.price-table{
+  padding: 60px 0;
+  background: teal;
+
+}
+.single-price{
+  margin: 10px auto;
+  width: 100%;
+  float: left;
+  background-color: #efefef;
+  transition: 0.5s;
+  
+  
+}
+.single-price{
+  box-shadow:0 2px 20px #ccc;
+
+}
+.price-head{
+  background-color: #2196f3;
+  float: left;
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+
+}
+.price-head h2{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.price-head p{
+  color: #ccc;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+
+
+}
+span{
+  font-size: 15px;
+}
+.price-content{
+
+  float: left;
+  width: 100%;
+  padding: 0 15px;
+}
+ul li{
+  border-bottom: 1px solid #fff;
+  padding: 15px 10px;
+  list-style: none;
+
+}
+ul li:last-child{
+  border: none;
+}
+.fa{
+  padding: 0 10px;
+  color: red;
+  font-size: 20px;
+}
+.fa-check-circle{
+  color: green;
+}
+.price-button{
+  float: left;
+  padding: 15px 15px 30px;
+  text-align: center;
+  width: 100%;
+}
+.buy-btn{
+  background-color: #2196f3;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px 50px ;
+  transition: all 0.5s;
+} 
+.buy-btn:hover{
+  border-color: 1px solid #fff;
+  background-color: #3f51b5;
+
+
+}
+a{
+  text-decoration: none !important;
+  color: #fff !important;
+
+
+}
+/**/
+.footer-top{
+    background: #111;
+    padding: 80px 0;
+}
+.segment-one h3{
+    font-family: courgette;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+.segment-one h3{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-one h3:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-two h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-two h2::before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+
+.segment-two ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-two ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.segment-two ul li a{
+    color: #999;
+    text-decoration: none;
+}
+.segment-two ul a:hover{
+    color: #13A456;
+}
+.segment-three h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-three h2::before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-three a{
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+.segment-three a i{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+}
+
+.segment-four h4{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-four h4:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-five h2{
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.segment-five h2:before{
+    content: '|';
+    color: #c65039;
+    padding: 10px;
+}
+.segment-five ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-five ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+.segment-five ul li a{
+    color: #999;
+    text-decoration: none;
+}
+
+#footer .footer-top .segment-five ul a:hover{
+    color: #13A456;
+}
+.link-area li a i{
+    margin-right: 10px;
+    
+}
+.link-area li{
+    padding: 5px 5px 5px 0;
+    list-style: none;
+
+} 
+
+#footer{
+    background-color: #23415c;
+    width: 100%;
+    color: #fff;
+}
+#footer .footer-top .footer-info h3{
+    color: cornsilk;
+    font-size: 150%;
+    font-weight: 700 ;
+}
+#footer .tee{
+    text-align: center;
+    color: white;
+}
+
+
+
+
+  </style>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container">
+      <a class="navbar-brand" href="#">Tipico</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--col-auto begins-->
+      <div class="col-auto">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav navbar-right">
+          <a class="nav-item nav-link active" href="{% url 'index'%}">HOME</a>
+          <a class="nav-item nav-link" href="{% url 'index'%}">CONTACT</a>
+          <a class="nav-item nav-link" href="{% url 'index'%}">ABOUT US</a> 
+          
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MODE OF PAYMENT
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Paypal</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Skrill</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Neteller</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Bitcoins</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">M-PESA</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Western Union</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Perfect Money</a>
+            
+          </div>
+          <a class="nav-item nav-link" href="{% url 'accounts_settings'%}">profile</a> 
+        </div> 
+      </div>
+    </div>
+    <!-- col auto ends -->
+    <span class="hello-msg">Hello,{{request.user}}</span>
+    <span class="hello-msg"><a href="{% url 'logout'%}">Logout</a></span>
+    </div>
+    </nav>
+<!-- end of navigation bar -->
+    
+
+<!-- content in the body -->
+
+
+    
+      <section class="price-table"> 
+      <div class="container" id="intro">
+        <h1> PRICING PLAN</h1>
+        <P class="text-center"> skindly below are our best affordable price for diffrent packages</P>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>FREE</h2>
+                <p>$0/<span></span></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i>Free odds</li>
+                  <li><i class="fa fa-check-circle"></i>2 Odds</li>
+                  <li><i class="fa fa-times-circle"></i>+3 days Free</li>
+                  <li><i class="fa fa-times-circle"></i>3 odds</li>
+                  <li><i class="fa fa-times-circle"></i>Unlimited Multibet</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="{% url 'freeodds'%}" class="buy-btn">SUBSCRIBE</a>
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>REGULAR</h2>
+                <p>$8/<sapn>WEEKLY</sapn></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i>2 Odds</li>
+                  <li><i class="fa fa-check-circle"></i>2 Mutibets</li>
+                  <li><i class="fa fa-check-circle"></i>+3 Day Free</li>
+                  <li><i class="fa fa-times-circle"></i>3 Odds</li>
+                  <li><i class="fa fa-times-circle"></i>Unlimitd Multibet</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="{% url 'payment1'%}" class="buy-btn">SUBSCRIBE</a>
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>VIP</h2>
+                <p>$15/<sapn>2 WEEKS</sapn></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i>3 Odds</li>
+                  <li><i class="fa fa-check-circle"></i>4 Multibet Daily</li>
+                  <li><i class="fa fa-check-circle"></i>+5 Days Free</li>
+                  <li><i class="fa fa-check-circle"></i>Unlimited VIP </li>
+                  <li><i class="fa fa-check-circle"></i>Unlimited Support</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="{% url 'payment2'%}" class="buy-btn">SUBSCRIBE</a>
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="col-md-3">
+            <div class="single-price">
+              <div class="price-head">
+                <h2>VVIP</h2>
+                <p>$30/<sapn>MONTHLY</sapn></p>
+              </div>
+              <div class="price-content">
+                <ul>
+                  <li><i class="fa fa-check-circle"></i>5 Odds</li>
+                  <li><i class="fa fa-check-circle"></i>6 Multibet Daily</li>
+                  <li><i class="fa fa-check-circle"></i>+7 Days Free</li>
+                  <li><i class="fa fa-check-circle"></i>Unlimited VIP</li>
+                  <li><i class="fa fa-check-circle"></i>Unlimitd Support</li>
+                </ul>
+              </div>
+              <div class="price-button">
+                <a href="{% url 'payment3'%}" class="buy-btn">SUBSCRIBE</a>
+              </div>
+
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+   
+</body>
+</html>
+
+
+
