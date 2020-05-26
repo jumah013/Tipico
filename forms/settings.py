@@ -34,7 +34,7 @@ SECRET_KEY = 'u)p$$(0-$dmz&nxo*t7m$)4yo1*wg8^r7o#v0$*kki@h^+c)bz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True  
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tipicotips.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -52,6 +52,9 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -128,6 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 MEDIA_URL='/images/'
 STATICFILES_DIRS=[
