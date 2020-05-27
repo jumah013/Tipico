@@ -32,7 +32,7 @@ def registerpage(request):
                 name=user.username,
             )
 
-            messages.success(request,'Account was created for' + username)
+            messages.success(request,'Account was created for' + "" + username)
             return redirect('login')
     context={'form':form}
     return render(request,'accounts/register.html',context)
@@ -108,12 +108,12 @@ def success(request):
         your_phone = request.POST['your_phone']
         your_email = request.POST['your_email']
         your_address = request.POST['your_address']
-        your_schedule = request.POST['your_schedule']
+        your_odd= request.POST['your_odd']
         your_date = request.POST['your_date']
         your_message = request.POST['your_message']
 
 
-        booking = "Name: "+ your_name + " Phone: " +  your_phone + "Email:" +  your_email + "Address:" + your_address + "Schedule:" + your_schedule + "Date:" + your_date + "Message:" + your_message
+        booking = "Name: "+ your_name + " Phone: " +  your_phone + "Email:" +  your_email + "Address:" + your_address + "Odd:" + your_odd + "Date:" + your_date + "Message:" + your_message
         send_mail(
             'Booking Request',#subject111
             booking,#message
@@ -125,7 +125,7 @@ def success(request):
             'your_phone':your_phone,
             'your_email':your_email,
             'your_address':your_address,
-            'your_schedule':your_schedule,
+            'your_schedule':your_odd,
             'your_date':your_date,
             'your_message':your_message
 
