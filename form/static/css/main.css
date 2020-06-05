@@ -3,7 +3,7 @@
     padding: 0;
 }
 p{
-    color: #fff;
+    color: white;
 }
 h2,h3{
     color: #fff;
@@ -75,12 +75,12 @@ a.btn{
     border-radius: 20px;
 }
 a.btn-first{
-    background-color: darkorange;
+    background-color: darkgreen;
     color: #fff;
 
 }
 a.btn-second{
-    background: transparent;
+    background-color: darkgreen;
     border: 1px solid darkorange;
     color: #fff;
 }
